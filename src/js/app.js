@@ -1,19 +1,10 @@
-'use strict';
+//import 'zone.js';
+import 'reflect-metadata';
+import 'es6-shim';
 
-var angular = require('angular');
-var ngRoute = require('angular-route');
+import { bootstrap } from 'angular2/platform/browser';
+import { ROUTER_PROVIDERS } from 'angular2/router';
+import { MyAppComponent } from './components/my-app';
 
-var CommonFactory = require('./factories/CommonFactory');
+bootstrap(MyAppComponent); 
 
-var WelcomeCtrl = require('./controllers/WelcomeCtrl');
-
-var routes = require('./routes');
-
-var app = angular.module('myApp', [ngRoute]);
-
-
-app.factory('CommonFactory', ['$http', '$q', CommonFactory])
-
-app.controller('WelcomeCtrl', ['$scope', 'CommonFactory', WelcomeCtrl]);
-
-app.config(['$routeProvider', routes]);

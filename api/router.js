@@ -1,5 +1,4 @@
-var express = require('express');
-var TestController = require('./controllers/TestController')
+var express = require('express');\
 
 var router = express.Router();
 
@@ -8,13 +7,6 @@ router.use(function(req, res, next) {
     console.log(req.method, req.url);
 
     next(); 
-});
-
-router.post('/test', TestController.create);
-
-
-router.get('/about', function(req, res) {
-    res.send('im the about page!'); 
 });
 
 module.exports = router;

@@ -1,4 +1,6 @@
-# Build Angular 2 app with ECMA6(Babel),mongoDB and SASS
+# Build Angular 2 app with ECMA6(Babel), MongoDB and SASS
+
+Status: in development!
 
 
 - Uses Babel instead of TypeScript

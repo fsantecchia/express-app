@@ -1,4 +1,4 @@
-const apiRouter = require('./api/router');
+const apiRouter = require('./target/api/router');
 const express = require('express');
 const mongoose = require('mongoose');
 

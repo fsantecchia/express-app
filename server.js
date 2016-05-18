@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const baseApiURL = '/api';
 const server = express();
-const serverPort = 5000;
+const serverPort = 5001;
 const targetURL = express.static('./target');
 
 const startServer = function () {
@@ -14,6 +14,8 @@ const startServer = function () {
     mongoose.connect('mongodb://localhost/test');
 
     server.listen(serverPort);
+    
+    console.log('Listening HTTP on port:' + serverPort);
 };
 
-module.exports = startServer;
+startServer();

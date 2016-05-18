@@ -1,8 +1,4 @@
-# Build Angular 2 app with ECMA6(Babel), MongoDB and SASS
+# REST API with Express
 
 Status: in development!
 
-
-- Uses Babel instead of TypeScript
-
-- Bundles JavaScript files into one file with Browserify.

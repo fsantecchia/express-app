@@ -16,5 +16,4 @@ const startServer = function () {
     server.listen(serverPort);
 };
 
-
 module.exports = startServer;
